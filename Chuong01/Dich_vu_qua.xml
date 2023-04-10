@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dich_vus>
+	<Dich_vu ID = "1">Bánh kem </Dich_vu>
+	<Dich_vu ID = "2">Gấu bông </Dich_vu>
+	<Dich_vu ID = "3">Chocolate </Dich_vu>
+	<Dich_vu ID = "4">Giỏ trai cây </Dich_vu>
+	<Dich_vu ID = "5">quà tặng khác </Dich_vu>
+	<Dich_vu ID = "6">Giỏ quà tết </Dich_vu>
+</Dich_vus>

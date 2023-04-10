@@ -1,0 +1,30 @@
+﻿/*1 | 1 | Hoa Cúc | Đón xuân | 50000 |cuc_9.jpg| Hoa cúc các màu: trắng, vàng, cam|1
+/*2 | 1 | Hoa Cúc | Hồn nhiên | 60000 |cuc_2.jpg| Hoa cúc vàng, cam, lá măng |1
+/*3 | 1 | Hoa Cúc | Tím thủy chung | 45000 |cuc_3.jpg| Hoa cúc tím |1
+/*4 | 1 | Hoa Cúc | Nét duyên tím hoa cà | 40000 |cuc_4.jpg| Hoa cúc màu tím nhạt |0
+/*5 | 1 | Hoa Cúc | Cùng khoe sắc | 70000 |cuc_5.jpg| Hoa cúc cac màu trắng vàng cam |0
+/*6 | 1 | Hoa Cúc | Trắng ngây thơ | 65000 |cuc_6.jpg| Hoa cuc trắng | 0
+/*7 | 2 | Hoa Cưới | Dây tơ hồng | 250000 |cuoi_1.jpg| Hoa hồng đậm, hoa hồng xanh, các loại lá măng |1
+/*8 | 2 | Hoa Cưới | Cầu thủy tinh | 220000 |cuoi_2.jpg| Hoa hồng và hoa thủy tiên trắng |1
+/*9 | 2 | Hoa Cưới | Duyên thầm | 260000|cuoi_3.jpg| Hoa cúc trắng, baby, lá măng |1
+/*10 | 2 | Hoa Cưới | Đâm chồi nảy lộc | 180000 |cuoi_4.jpg| Hoa hồng trắng và các loại lá măng |0
+/*11 | 2 | Hoa Cưới | Hòa quyện | 270000 |cuoi_5.jpg| Hoa hồng trắng , lá thuỷ tùng |0
+/*12 | 2 | Hoa Cưới | Nồng nàn | 210000|cuoi_6.jpg| Hoa hồng đỏ, lá thủy tùng, lá măng |0
+/*13 | 3 | Hoa Hồng | Together | 120000 |hong_1.jpg| Hồng xác pháo, cúc tím | 0
+/*14 | 3 | Hoa Hồng | Long trip | 85000 |hong_2.jpg| Hoa hồng đỏ, lá kim thủy tùng |0
+/*15 | 3 | Hoa Hồng | Beautiful life | 100000 |hong_3.jpg| Hồng đỏ, lá măng, lá đệm |0
+/*16 | 3 | Hoa Hồng | Morning Sun | 75000 |hong_4.jpg| Hoa hồng vàng | 0
+/*17 | 3 | Hoa Hồng | Pretty Bloom | 65000 |hong_5.jpg| Hoa hồng trắng và lá thông |0
+/*18 | 3 | Hoa Hồng | Red Rose | 45000 |hong_6.jpg| Hồng đỏ và lá măng | 0
+/*19 | 4 | Hoa Sen | Vấn vương | 150000 |xuan_1.jpg| Hồng đỏ, hồng đậm, cúc đỏ, các loại lá |1
+/*20 | 4 | Hoa Sen | Nắng nhẹ nhàng | 50000 |xuan_2.jpg| Hoa cuc xanh, ly vàng, lá đệm |1
+/*21 | 4 | Hoa Sen | Thanh tao | 120000 |xuan_3.jpg| Hoa thủy tiên, cúc trắng, cuc dại tím, các loại lá đệm |1
+/*22 | 4 | Hoa Sen | Tinh khiết | 110000 |xuan_4.jpg| Hồng trăng vá salem |0
+/*23 | 4 | Hoa Sen | Mùa xuân chín | 150000 |xuan_5.jpg| Hồng cam, cúc xanh , thủy tiên và các loại lá đệm |0 
+/*24 | 4 | Hoa Sen | Rực rỡ nắng vàng | 75000 |xuan_6.jpg| Hồng vàng và cuc vàng |0
+/*25 | 3 | Hoa Hồng | Love Candy | 95000 |hong_7.jpg| Hoa hồng trắng xen vơi hoa hồng màu hồng nhạt, điểm thêm baby trắng và lá măng |0
+/*26 | 2 | Hoa Cưới | Happy Wedding | 210000 |cuoi_7.jpg| hoa hồng môn và các loại lá |0
+/*27 | 1 | Hoa Cúc | Cúc nhiệt đới | 150000 |cuc_8.jpg| Cúc vàng, hồng cam, lá măng |0
+/*28 | 1 | Hoa Cúc | Trái mùa | 180000 |cuc_7.jpg| Quả ngọt đầu mùa |0
+/*29 | 1 | Hoa Cúc | Bé mèo đáng yêu | 180000 |cuc_1.jpg| cúc trắng, cúc cam |0
+/*30 | 3 | Hoa Hồng | Dịu dàng | 250000 |hong_8.jpg| Hồng phấn, lá măng |0

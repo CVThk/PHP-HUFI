@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Chu_des>
+    <Chu_de ID="1" TenCD="Hoa Tươi ngày cưới" Hinh="HoaCuoi.jpg" Gia="500.000đ"></Chu_de>
+    <Chu_de ID="2" TenCD="Hoa Tươi bó" Hinh="HoaBo.jpg" Gia="600.000đ"></Chu_de>
+    <Chu_de ID="3" TenCD="Hoa Tươi cắm giỏ" Hinh="GioHoa.jpg" Gia="1.000.000đ"></Chu_de>
+    <Chu_de ID="4" TenCD="Hoa Tươi sự kiện" Hinh="HoaSK.jpg" Gia="2.000.000đ"></Chu_de>
+    <Chu_de ID="5" TenCD="Hoa Tươi để bàn" Hinh="HoaBan.jpg" Gia="700.000đ"></Chu_de>
+    <Chu_de ID="6" TenCD="Hoa Ly tươi" Hinh="HoaLy.jpg" Gia="300.000đ"></Chu_de>
+    <Chu_de ID="7" TenCD="Hoa Hồng tươi" Hinh="Hoahong.jpg" Gia="200.000đ"></Chu_de>
+    <Chu_de ID="8" TenCD="Chậu hoa Lan" Hinh="ChauLan.jpg" Gia="1.500.000đ"></Chu_de>
+    <Chu_de ID="9" TenCD="Hoa Phong Lan" Hinh="PhongLan.jpg" Gia="2.500.000đ"></Chu_de>
+    <Chu_de ID="10" TenCD="Cây cảnh" Hinh="CayCanh.jpg" Gia="200.000đ"></Chu_de>
+</Chu_des>

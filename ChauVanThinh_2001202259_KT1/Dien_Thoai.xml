@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SanPhams>
+    <SanPham ID="1" Hinh="Images_Cau234/SamSung1.jpg">SamSung</SanPham>
+    <SanPham ID="2" Hinh="Images_Cau234/Iphone1.jpg">Iphone</SanPham>
+    <SanPham ID="3" Hinh="Images_Cau234/Oppo1.jpg">Oppo</SanPham>
+    <SanPham ID="4" Hinh="Images_Cau234/Bphone1.jpg">Bphone</SanPham>
+    <SanPham ID="5" Hinh="Images_Cau234/Nokia1.jpg">Nokia</SanPham>
+    <SanPham ID="6" Hinh="Images_Cau234/Bakery1.jpg">Bakery</SanPham>
+</SanPhams>

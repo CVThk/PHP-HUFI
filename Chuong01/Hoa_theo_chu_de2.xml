@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Chu_des>
+	<Chu_de ID = "1" TenCD="Hoa Tươi ngày cưới">
+		<Hoa ID="1" Hinh="HoaCuoi1.jpg" Gia="500.000đ">Hoa cưới 1</Hoa>
+		<Hoa ID="2" Hinh="HoaCuoi2.jpg" Gia="600.000đ">Hoa cưới 2</Hoa>
+		<Hoa ID="3" Hinh="HoaCuoi3.jpg" Gia="700.000đ">Hoa cưới 3</Hoa>
+	</Chu_de>
+	<Chu_de ID = "2" TenCD="Hoa Tươi bó">
+		<Hoa ID="1" Hinh="HoaBo1.jpg" Gia="100.000đ">Hoa Tươi bó 1</Hoa>
+		<Hoa ID="2" Hinh="HoaBo2.jpg" Gia="200.000đ">Hoa Tươi bó 2</Hoa>
+	</Chu_de>
+	<Chu_de ID = "3" TenCD="Hoa Tươi cắm giỏ">
+		<Hoa ID="1" Hinh="GioHoa1.jpg" Gia="300.000đ">Giỏ hoa 1</Hoa>
+		<Hoa ID="2" Hinh="GioHoa2.jpg" Gia="400.000đ">Giỏ hoa 2</Hoa>
+	</Chu_de>
+	<Chu_de ID = "4" TenCD="Hoa Tươi sự kiện">
+		<Hoa ID="1" Hinh="HoaSK1.jpg" Gia="1.000.000đ">Hoa tươi Sự kiện 1</Hoa>
+		<Hoa ID="2" Hinh="HoaSK2.jpg" Gia="2.400.000đ">Hoa tươi Sự kiện 2</Hoa>
+	</Chu_de>
+	<Chu_de ID = "5" TenCD="Hoa Tươi để bàn">
+		<Hoa ID="1" Hinh="HoaBan1.jpg" Gia="700.000đ">Hoa Tươi để bàn 1</Hoa>
+		<Hoa ID="2" Hinh="HoaBan2.jpg" Gia="750.000đ">Hoa Tươi để bàn 2</Hoa>
+	</Chu_de>
+</Chu_des>
