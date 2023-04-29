@@ -1,0 +1,22 @@
+.btn-pager {
+    border: 1px solid #c2c2c2;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #696969;
+}
+.btn-pager.current {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(58, 58, 248);
+}
+.btn-pager.disable {
+    background-color: #d5d5d5;
+}
+.btn-pager:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.btn-pager:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}

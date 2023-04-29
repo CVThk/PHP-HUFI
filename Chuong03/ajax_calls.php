@@ -5,7 +5,7 @@ if(isset($_POST['action']) && $_POST['action'] == 'update-qty')
 {
     $sessionItem = $_POST['itemID'];
     $sessionItemQty = $_POST['qty'];
-    $productSessionPrice = $_SESSION['cart_items'][$sessionItem]['total_price'];
+    //$productSessionPrice = $_SESSION['cart_items'][$sessionItem]['total_price'];
 
     $_SESSION['cart_items'][$sessionItem]['qty'] = $sessionItemQty;
     $_SESSION['cart_items'][$sessionItem]['total_price'] = $sessionItemQty * $productSessionPrice;

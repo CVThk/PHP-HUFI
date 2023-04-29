@@ -127,7 +127,7 @@
                                                 <?php echo number_format(floatval($arr[$i]["gia"]), 0, ',', '.'); ?> VNĐ
                                             </td>
                                             <td>
-                                                <input type="number" min="1" value="<?php echo $arr[$i]["so_luong"]; ?>" />
+                                                <input type="number" class="cart-qty-single" data-item-id="<?php echo $arr[$i]["ma_mon"]; ?>" min="1" value="<?php echo $arr[$i]["so_luong"]; ?>" />
                                             </td>
                                             <td style="text-align: right;">
                                                 <?php echo number_format(floatval($arr[$i]["so_luong"] * $arr[$i]["gia"]), 0, ',', '.'); ?>
@@ -139,7 +139,7 @@
                                 ?>
                                 <tr>
                                     <td colspan="2">
-                                        <a href="ClearCart.php" class="btn btn-danger">Clear Cart</a>
+                                        <a href="ClearCart.php" id="emptyCart" class="btn btn-danger">Clear Cart</a>
                                     </td>
                                     <td style="font-weight: bold;"><?php echo $amountItem; ?></td>
                                     <td style="font-weight: bold; text-align: right;"><?php echo number_format(floatval($totalAll), 0, ',', '.'); ?></td>

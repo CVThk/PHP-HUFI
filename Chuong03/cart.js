@@ -10,7 +10,7 @@ $(document).ready(function(){
             success:function(data){
                 if (data.msg == 'success')
                 {
-                    window.location.href='cart.php';
+                    window.location.href='Cart.php';
                 }
             }
         });
@@ -24,7 +24,7 @@ $(document).ready(function(){
             data: {action:'empty',empty_cart:true},
             success:function(data){
                 if (data.msg == 'success') {
-                    window.location.href = 'cart.php';
+                    window.location.href = 'Cart.php';
                 }
             }
         });
