@@ -17,7 +17,11 @@
 
 <?php
     include("../Helper/DatabaseHelper.php");
-    $khach_hang = (new DatabaseHelper("mysql:host=localhost;dbname=ql_nha_hang"))->executeReader('SELECT * FROM khach_hang');
+    $search = '';
+    if(isset($_POST['txt_Search'])) {
+        $search = $_POST['txt_Search'];
+    }
+    $khach_hang = (new DatabaseHelper("mysql:host=localhost;dbname=ql_nha_hang"))->executeReader("SELECT * FROM khach_hang WHERE ten_khach_hang like '%".$search."%'");
 ?>
 
 <body>
@@ -72,19 +76,28 @@
                 </thead>
                 <tbody>
                     <?php
-                    foreach($khach_hang as $row) {
+                    if(count($khach_hang) > 0) {
+                        foreach($khach_hang as $row) {
+                            ?>
+                            <tr>
+                                <td><?php echo $row->ma_khach_hang ?></td>
+                                <td><?php echo $row->ten_khach_hang ?></td>
+                                <td><?php echo $row->email ?></td>
+                                <td><?php echo $row->dia_chi ?></td>
+                                <td><?php echo $row->dien_thoai ?></td>
+                                <td style="text-align: center;"><img style="width:30px; object-fit:contain;" src="image/<?php echo $row->hinh ?>" /></td>
+                                <td>
+                                    <a class="btn btn-success mr-2" href="UpdateCustomer.php?maKH=<?php echo $row->ma_khach_hang ?>">UPDATE</a>
+                                    <a class="btn btn-danger" href="DeleteCustomer.php?maKH=<?php echo $row->ma_khach_hang ?>">DELETE</a>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                    }
+                    else {
                         ?>
                         <tr>
-                            <td><?php echo $row->ma_khach_hang ?></td>
-                            <td><?php echo $row->ten_khach_hang ?></td>
-                            <td><?php echo $row->email ?></td>
-                            <td><?php echo $row->dia_chi ?></td>
-                            <td><?php echo $row->dien_thoai ?></td>
-                            <td style="text-align: center;"><img style="width:30px; object-fit:contain;" src="image/<?php echo $row->hinh ?>" /></td>
-                            <td>
-                                <a class="btn btn-success mr-2" href="UpdateCustomer.php?maKH=<?php echo $row->ma_khach_hang ?>">UPDATE</a>
-                                <a class="btn btn-danger" href="DeleteCustomer.php?maKH=<?php echo $row->ma_khach_hang ?>">DELETE</a>
-                            </td>
+                            <td colspan="7" style="text-align: center;">Không tìm thấy dữ liệu phù hợp</td>
                         </tr>
                         <?php
                     }

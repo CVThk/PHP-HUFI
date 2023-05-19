@@ -12,12 +12,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
-    <title>Danh Sách Khách Hàng</title>
+    <title>Danh Sách Loại Món Ăn</title>
 </head>
 
 <?php
     include("../Helper/DatabaseHelper.php");
-    $khach_hang = (new DatabaseHelper("mysql:host=localhost;dbname=ql_nha_hang"))->executeReader('SELECT * FROM khach_hang');
+    $lma = (new DatabaseHelper("mysql:host=localhost;dbname=ql_nha_hang"))->executeReader('SELECT * FROM loai_mon_an');
 ?>
 
 <body>
@@ -56,34 +56,29 @@
         </div>
 
         <div>
-            <h1 style="text-transform: uppercase; text-align: center; margin: 20px 0;">Trang quản lý khách hàng</h1>
-            <a class="btn btn-primary mb-2" href="CreateCustomer.php">ADD NEW</a>
+            <h1 style="text-transform: uppercase; text-align: center; margin: 20px 0;">Trang quản lý loại món ăn</h1>
+            <a class="btn btn-primary mb-2" href="CreateCategory.php">ADD NEW</a>
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Mã KH</th>
-                        <th>Tên KH</th>
-                        <th>Email</th>
-                        <th>Địa Chỉ</th>
-                        <th>Điện Thoại</th>
-                        <th>Hình</th>
-                        <th>CRUD</th>
+                        <th>Mã Loại</th>
+                        <th>Tên Loại</th>
+                        <th>Mô Tả</th>
+                        <th style="text-align: center;">Hình</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                    foreach($khach_hang as $row) {
+                    foreach($lma as $row) {
                         ?>
                         <tr>
-                            <td><?php echo $row->ma_khach_hang ?></td>
-                            <td><?php echo $row->ten_khach_hang ?></td>
-                            <td><?php echo $row->email ?></td>
-                            <td><?php echo $row->dia_chi ?></td>
-                            <td><?php echo $row->dien_thoai ?></td>
-                            <td style="text-align: center;"><img style="width:30px; object-fit:contain;" src="image/<?php echo $row->hinh ?>" /></td>
+                            <td><?php echo $row->ma_loai ?></td>
+                            <td><?php echo $row->ten_loai ?></td>
+                            <td><?php echo $row->mo_ta ?></td>
+                            <td style="text-align: center;"><img style="width:60px; object-fit:contain;" src="image/<?php echo $row->hinh ?>" /></td>
                             <td>
-                                <a class="btn btn-success mr-2" href="UpdateCustomer.php?maKH=<?php echo $row->ma_khach_hang ?>">UPDATE</a>
-                                <a class="btn btn-danger" href="DeleteCustomer.php?maKH=<?php echo $row->ma_khach_hang ?>">DELETE</a>
+                                <a class="btn btn-success mr-2" href="UpdateCategory.php?ml=<?php echo $row->ma_loai ?>">UPDATE</a>
                             </td>
                         </tr>
                         <?php
