@@ -62,15 +62,43 @@
     function password($string) {
         $pwd = $string;
         $pepper = "cvtmusic";
-        $pwd_peppered = hash_hmac("sha256", $pwd, $pepper);
-        return $pwd_peppered;
+        $pwd_peppered = hash_hmac("sha256", $pwd, $pepper, true);
+        return base64_encode($pwd_peppered);
     }
     function checkPassword($username, $password, $account) {
         if(strcmp($username, $account->Username) == 0) {
-            if(password_verify(password($password), $account->Password)){
+            if(password_verify($password, $account->Password)){
                 return true;
             }
         }
         return false;
     }
+    function jwt($content) {
+        // Create token header as a JSON string
+        $header = json_encode(['typ' => 'JWT', 'alg' => 'HS256']);
+
+        // Create token payload as a JSON string
+        $payload = $content;
+
+        // Encode Header to Base64Url String
+        $base64UrlHeader = str_replace(['+', '/', '='], ['-', '_', ''], base64_encode($header));
+
+        // Encode Payload to Base64Url String
+        $base64UrlPayload = str_replace(['+', '/', '='], ['-', '_', ''], base64_encode($payload));
+
+        // Create Signature Hash
+        $signature = hash_hmac('sha256', $base64UrlHeader . "." . $base64UrlPayload, 'cvtmusic', true);
+
+        // Encode Signature to Base64Url String
+        $base64UrlSignature = str_replace(['+', '/', '='], ['-', '_', ''], base64_encode($signature));
+
+        // Create JWT
+        $jwt = $base64UrlHeader . "." . $base64UrlPayload . "." . $base64UrlSignature;
+        return $jwt;
+    }
+    function parseJWT($token) {
+        $obj = (json_decode(base64_decode(str_replace('_', '/', str_replace('-','+',explode('.', $token)[1])))));
+        return $obj;
+    }
+    //nM37pcb5vdRR4xf2OfpHzI9bkHd2dN10s3/j8kVz9g8=
 ?>

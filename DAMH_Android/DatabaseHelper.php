@@ -1,14 +1,14 @@
 <?php
 class DatabaseHelper
 {
-    var $driver = "mysql:host=localhost;dbname=id20413667_db_appmusic";
+    var $driver = "mysql:host=localhost;dbname=app_music";
     function __construct()
     {
     }
     function getConnect()
     {
         try {
-            $pdo = new PDO($this->driver, "id20413667_adcvt", "h/FPonr=IE-nlhj7");
+            $pdo = new PDO($this->driver, "root", "");
             $pdo->query("set names utf8");
             return $pdo;
         } catch (PDOException $ex) {

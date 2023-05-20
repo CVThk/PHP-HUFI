@@ -7,7 +7,8 @@ require 'Helper.php';
 // $pl = splitToArray(readFileTxt('PlayList_EDMViet.txt'), '$$$');
 // $pl = splitToArray(readFileTxt('PlayList_EDM.txt'), '$$$');
 // $pl = splitToArray(readFileTxt('PlayList_HanQuoc.txt'), '$$$');
-$pl = splitToArray(readFileTxt('PlayList_RapViet.txt'), '$$$');
+// $pl = splitToArray(readFileTxt('PlayList_RapViet.txt'), '$$$');
+$pl = splitToArray(readFileTxt('PlayList_NhacPhimVN.txt'), '$$$');
 unset($pl[0]);
 // check
 

@@ -9,7 +9,8 @@ $db = new DatabaseHelper();
 // $bh = splitToArray(readFileTxt('MusicList_EDMViet.txt'), '$$$');
 // $bh = splitToArray(readFileTxt('MusicList_EDM.txt'), '$$$');
 // $bh = splitToArray(readFileTxt('MusicList_HanQuoc.txt'), '$$$');
-$bh = splitToArray(readFileTxt('MusicList_RapViet.txt'), '$$$');
+// $bh = splitToArray(readFileTxt('MusicList_RapViet.txt'), '$$$');
+$bh = splitToArray(readFileTxt('MusicList_NhacPhimVN.txt'), '$$$');
 $queryCasi = 'SELECT `tbl_Singer`.`ID` FROM `tbl_Singer` WHERE `tbl_Singer`.`Name` = ?';
 unset($bh[0]);
 // check
@@ -22,7 +23,8 @@ $strInsert_BHPL = 'INSERT INTO `tbl_SongOfPlayList`(IDSong, IDPlayList) VALUES';
 // $idPL = createID('Top 100 EDM Việt');
 // $idPL = createID('Top 100 Hàn Quốc');
 // $idPL = createID('Top 100 EDM');
-$idPL = createID('Top 100 Rap Việt');
+// $idPL = createID('Top 100 Rap Việt');
+$idPL = createID('Top 100 nhạc phim Việt Nam');
 
 $i = 0;
 foreach($bh as $item) {

@@ -9,7 +9,8 @@ $db = new DatabaseHelper();
 // $CaSi = splitToArray(readFileTxt('AnhCaSi_AuMy.txt'), '$$$');
 // $CaSi = splitToArray(readFileTxt('AnhCaSi_EDM.txt'), '$$$');
 // $CaSi = splitToArray(readFileTxt('AnhCaSi_HanQuoc.txt'), '$$$');
-$CaSi = splitToArray(readFileTxt('AnhCaSi_RapViet.txt'), '$$$');
+// $CaSi = splitToArray(readFileTxt('AnhCaSi_RapViet.txt'), '$$$');
+$CaSi = splitToArray(readFileTxt('AnhCaSi_NhacPhimVN.txt'), '$$$');
 // $CaSi = splitToArray(readFileTxt('AnhCaSi_EDMViet.txt'), '$$$');
 unset($CaSi[0]);
 // check
@@ -32,4 +33,3 @@ foreach($CaSi as $item) {
     $strInsert .= "('".$id."','".$arr[0]."','".(trim($arr[1], "\r\n"))."')";
 }
 echo $strInsert;
-
