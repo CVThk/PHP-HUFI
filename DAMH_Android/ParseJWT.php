@@ -1,8 +1,14 @@
 <?php
-    //$token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMjN9.NYlecdiqVuRg0XkWvjFvpLvglmfR1ZT7f8HeDDEoSx8';
-    $token = 'eyJhbGciOiJIUzI1NiJ9.eyJVc2VybmFtZSI6IkMuVi5UIiwiUGFzc3dvcmQiOiJy4bubdCBhbmRyb2lkIn0.aVxVdLu--V6rpGv';
-    //$token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMjMsInBhc3MiOiJDVlRwcm8ifQ.52eIUHp4GSku6GP14-CEmrcZqpfJuBM-CzJSDtLuFKY';
-    $arr = (json_decode(base64_decode(str_replace('_', '/', str_replace('-','+',explode('.', $token)[1])))));
-    print_r($arr);
-    //echo $arr -> Username;
+    include('DatabaseHelper.php');
+    include('Helper.php');
+    $db = new DatabaseHelper();
+     $idsong = '';
+     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $json = file_get_contents('php://input');
+        $requestData = json_decode($json, true);
+        $token = $requestData['token'];
+        $arr = parseJWT($token);
+        $user = $db->executeReader('SELECT * FROM `tbl_Customer` WHERE `tbl_Customer`.`Username` = ?', array($arr->Username))[0];
+        echo json_encode($user);
+     }
 ?>

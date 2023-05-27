@@ -5,9 +5,9 @@
      $songs = $db->executeReader('SELECT * FROM tbl_Song');
      foreach($songs as $song) {
         $url = '';
-        //echo substr($song->Link, 0, 9).'<br/>';
-        if(substr($song->Link, 0, 9) !== 'http://dl') {
-            $url = str_replace('http://', 'http://dl.', $song->Link);
+        echo substr($song->Link, 0, 9).'<br/>';
+        if(substr($song->Link, 0, 7) === 'http://') {
+            $url = str_replace('http://', 'https://', $song->Link);
             $db->executeNonQuery('UPDATE tbl_Song SET Link = ? WHERE ID = ?', array($url, $song->ID));
         }
      }
